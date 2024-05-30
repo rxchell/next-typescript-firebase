@@ -1,6 +1,6 @@
 import React from "react";
 import Dashboard from "../components/dashboard";
-import Splash from "../components/splash";
+import Splash from "../components/landingPage";
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from "next";
 import nookies from "nookies";
 import { userIsLoggedIn } from "../firebase/auth/utils";

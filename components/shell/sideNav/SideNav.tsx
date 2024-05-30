@@ -4,7 +4,6 @@ import NavBarOptions from "../navBar/NavBarOptions";
 import Link from "next/link";
 import { signOut } from "../../../utils/genericUtils";
 import LogoSvg from "../../../images/svg/logo.svg";
-import GitHubSvg from "../../svg/GitHubSvg";
 import useLocalStorage from "../../../utils/hooks/useLocalStorage";
 
 const CollapsedContext = createContext(false);
@@ -72,15 +71,6 @@ const SideNavFooter = ({ setExpanded }: sideNavFooterProps) => {
       </a>
       <hr></hr>
       <div className="flex pt-2">
-        <div className="text-blue-50 opacity-70 hover:opacity-100 flex-2 justify-start mx-2 py-1">
-          <a
-            href="https://github.com/ahern55/next-firebase-typescript"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <GitHubSvg />
-          </a>
-        </div>
         <div className="text-right flex-1 align-middle">
           <button
             onClick={() => {
